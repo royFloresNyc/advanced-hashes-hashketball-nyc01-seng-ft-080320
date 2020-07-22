@@ -239,6 +239,14 @@ def player_with_longest_name
   longest_name 
 end 
 
+def long_name_steals_a_ton?
+  all_players = all_players = get_players(game_hash)
+  player_with_max_steal = ""
+  max_steal = 0
+  all_players.each do |player|
+    if player[:]
+  end
+end
   
   
 
