@@ -216,6 +216,10 @@ def most_points_scored
   player_with_most_points
 end 
 
+def winning_team
+  
+end 
+
   
   
 
