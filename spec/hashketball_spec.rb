@@ -195,5 +195,30 @@ describe 'hashketball' do
     end
   
   end  
+  
+  describe '#winning_team' do
+    
+    it 'returns the name of the team with the most points scored' do
+      expect(winning_team).to eq("Brooklyn Nets")
+    end
+  
+  end
+  
+  describe '#player_with_longest_name' do
+    
+    it 'returns the name of the player with the longest name' do
+      expect(player_with_longest_name).to eq("Bismack Biyombo")
+    end
+  
+  end
+  
+  describe '#long_name_steals_a_ton?' do
+    
+    it 'returns true if the player with the longest name had the
+   most steals' do
+      expect(long_name_steals_a_ton?).to eq(true)
+    end
+  
+  end
 
 end
