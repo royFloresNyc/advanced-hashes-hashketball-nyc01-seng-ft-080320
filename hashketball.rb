@@ -216,16 +216,16 @@ def most_points_scored
   player_with_most_points
 end 
 
+#helper method for winning team
+def get_total_score(team_hash)
+  individual_player_scores = team_hash[:players].map { |player| player[:points] }
+  individual_player_scores.reduce { |sum, n| sum + n }
+end 
+
 def winning_team
-  home_team = game_hash[:home]
-  home_team_indv_scores = home_team[:players].map do |player|
-    player[:points]
-  end
-  home_team_total_score = home_team_indv_scores.reduce 
-  
-  away_team = game_hash[:away]
-  away_team_score = 
-  
+  home_team_score = get_total_score(game_hash[:home])
+  away_team_score = get_total_score(game_hash[:away])
+  home_team_score > away_team_score? 
 end 
 
 def player_with_longest_name
