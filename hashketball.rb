@@ -218,7 +218,10 @@ end
 
 def winning_team
   home_team = game_hash[:home]
-  home_team_score = home_team[:players].reduce 
+  home_team_indv_scores = home_team[:players].map do |player|
+    player[:points]
+  end
+  home_team_total_score = home_team_indv_scores.reduce 
   
   away_team = game_hash[:away]
   away_team_score = 
