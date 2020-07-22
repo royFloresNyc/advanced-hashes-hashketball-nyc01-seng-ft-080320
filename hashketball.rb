@@ -129,7 +129,7 @@ end
 
 # Write code here
 
-# helper helper method 
+# helper method 
 def get_players(collection)
   collection[:home][:players].concat(collection[:away][:players])
 end 
@@ -229,7 +229,12 @@ def get_total_score(team_hash)
 end 
 
 def player_with_longest_name
-
+  all_players = all_players = get_players(game_hash)
+  longest_name = ""
+  all_players.each do |player|
+    if player[:]
+  end   
+  longest_name 
 end 
 
   
