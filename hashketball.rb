@@ -225,7 +225,7 @@ end
 def winning_team
   home_team_score = get_total_score(game_hash[:home])
   away_team_score = get_total_score(game_hash[:away])
-  home_team_score > away_team_score? 
+  home_team_score > away_team_score ? game_hash[:home][:team_name] : game_hash[:away][:team_name]
 end 
 
 def player_with_longest_name
