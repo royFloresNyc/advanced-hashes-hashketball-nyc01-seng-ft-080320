@@ -217,7 +217,11 @@ def most_points_scored
 end 
 
 def winning_team
+  home_team = game_hash[:home]
+  home_team_score = home_team[]
   
+  away_team = game_hash[:away]
+  away_team_score = 
   
 end 
 
