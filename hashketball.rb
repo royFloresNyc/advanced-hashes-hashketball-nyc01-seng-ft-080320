@@ -218,7 +218,7 @@ end
 
 def winning_team
   home_team = game_hash[:home]
-  home_team_score = home_team[]
+  home_team_score = home_team[:players].reduce 
   
   away_team = game_hash[:away]
   away_team_score = 
