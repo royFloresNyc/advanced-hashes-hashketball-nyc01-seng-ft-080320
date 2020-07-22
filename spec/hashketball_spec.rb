@@ -188,4 +188,12 @@ describe 'hashketball' do
 
   end
 
+  describe '#most_points_scored' do
+    
+    it 'returns the name of the player with the most points scored' do
+      expect(most_points_scored).to eq("Ben Gordon")
+    end
+  
+  end  
+
 end
