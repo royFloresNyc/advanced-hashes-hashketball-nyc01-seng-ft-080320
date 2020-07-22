@@ -244,8 +244,12 @@ def long_name_steals_a_ton?
   player_with_max_steal = ""
   max_steal = 0
   all_players.each do |player|
-    if player[:]
+    if player[:steals] > max_steal
+      max_steal = player[:steals]
+      player_with_max_steal = player[:player_name]
+    end
   end
+  player_with_max_steal == player_with_longest_name
 end
   
   
